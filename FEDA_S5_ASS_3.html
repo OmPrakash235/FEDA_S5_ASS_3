@@ -1,0 +1,22 @@
+<!--Write jQuery Code to add a <b> tag at the beginning of the list item, containing the index of the list item-->
+
+<html>
+	<head>
+		<title>jQuery dom manipulation</title>
+	</head>
+	<body>
+		<ul>
+			<li>Html Tutorial</li>
+			<li>Mongodb Tutorial</li>
+			<li>Python Tutorial</li>
+		</ul>
+	</body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('li').each(function(index){
+				$(this).prepend('<b>' + index + ': </b>');
+			});
+		})
+	</script>
+</html>
